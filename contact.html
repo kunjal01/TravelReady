@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Contact</title>
+<script src="validation.js"></script>
+<style>
+a{
+text-decoration:none;
+color:white;
+}
+
+a:hover{
+color:#C0C0C0;
+}
+
+p{
+font-size:15px;
+}
+
+
+.text-block {
+  top: 20px;
+  left: 20px;
+  background-color: #404040;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align:center;
+
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+ 
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 15px;
+  background-color: #404040;
+  opacity:0.8;
+}
+
+body {
+  background-image: url("windmill.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Georgia;
+  color:white;
+  text-align:center;
+}
+
+</style>
+
+</head>
+<body>
+
+
+
+<div class="container">
+<div class="text-block">
+ <h2>About Us</h2>
+	<p>TravelReady aims to help you find your next favourite holiday destination!</p><hr> 
+    <h2>Sign Up to get Updates</h2>
+      
+</div>
+	
+<form name="myform" action="php3.php" style="border:1px solid #ccc;" method="post" onsubmit="return validateForm()">
+
+<label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" id="name" name="name">
+
+<label for="mail"><b>Email</b></label>
+    <input type="text" placeholder="abc@xyz.com" id="email" name="email">
+
+    <label for="pwd"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password"  id="pass" name="pass" >
+
+    <label for="rpwd"><b>Re-Enter Password</b></label>
+    <input type="password" placeholder="Re-Enter Password" id="rpass" name="rpass" >
+      <button type="reset" class="cancelbtn" > Cancel</button>
+    <button type="submit" class="signupbtn"  >Sign Up</button>
+   
+ 
+</form>
+
+
+
+<div class="text-block">
+      <a  href="home.html">Home</a>
+</div>
+
+
+</body>
+</html> 

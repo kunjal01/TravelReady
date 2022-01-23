@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Thank you</title>
+<style>
+body{
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+}
+
+p{
+font-size:23px;
+font-weight:bold;
+line-height:1.5;
+}
+
+.image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("thank.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  position: relative;
+}
+
+.text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+ transform:translate(-300px,-200px);
+}
+
+.text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.text button:hover {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="image">
+  <div class="text">
+    <h1 style="font-size:50px">Thankyou for Signing up</h1>
+    <p>You will be contacted shortly</p>
+    <form method="get" action="home.html">
+    <button type="submit">Home</button>
+    </form>
+  </div>
+</div>
+
+
+</body>
+</html>
